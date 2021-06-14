@@ -43,7 +43,7 @@ import S3PublishDeploy
 ...
 try Website().publish(using: [
     ...
-    .deploy(using: .s3(bucket: "my-test-bucket))
+    .deploy(using: .s3(bucket: "my-test-bucket"))
 ])
 ```
 By default, the package assumes you have the AWS CLI installed at `/usr/local/bin/aws`. If you want to provide a different AWS binary, you can pass the `pathToAWSBinary` and give the _full_ path to the binary. 
